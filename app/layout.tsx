@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/layout/navbar";
+import Footer from "@/components/layout/footer";
 
 const jetbrainsMono = JetBrains_Mono({subsets:['latin'],variable:'--font-mono'});
 
@@ -44,6 +45,7 @@ export default function RootLayout({
 
           <main className="flex-1 pt-20">
            {children}
+           <Footer />
           </main>
       </body>
     </html>
